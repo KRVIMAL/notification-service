@@ -1,0 +1,16 @@
+kafka:
+  url: "192.168.1.8:9092"
+  topic: "socket508_parsed" # Topic from Parsing Service
+  group: "notification-service-group" # Kafka consumer group ID
+
+smtp:
+  server: "smtp.example.com"
+  port: "587"
+  email: "your-email@example.com"
+  password: "your-email-password"
+
+sms:
+  apiURL: "https://sms-provider.example.com/send"
+  authScheme: "PLAIN"
+  userID: "your-sms-user-id"
+  password: "your-sms-password"
