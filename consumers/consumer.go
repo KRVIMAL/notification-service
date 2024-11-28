@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/KRVIMAL/notification-service/config"
-	notifications "github.com/KRVIMAL/notification-service/notfications"
+	"github.com/KRVIMAL/notification-service-310/config"
+	notifications "github.com/KRVIMAL/notification-service-310/notfications"
 	"github.com/segmentio/kafka-go"
 )
 
@@ -38,7 +38,6 @@ func StartKafkaConsumer(cfg *config.Config) {
 
 		// Handle notifications
 		go notifications.HandleNotifications(cfg, data)
-		
-		
+
 	}
 }

@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/KRVIMAL/notification-service/config"
-	"github.com/KRVIMAL/notification-service/notfications/alert"
-	"github.com/KRVIMAL/notification-service/notfications/sms"
+	"github.com/KRVIMAL/notification-service-310/config"
+	"github.com/KRVIMAL/notification-service-310/notfications/alert"
+	"github.com/KRVIMAL/notification-service-310/notfications/sms"
 )
 
 func HandleNotifications(cfg *config.Config, data map[string]interface{}) {

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/KRVIMAL/notification-service/models"
+	"github.com/KRVIMAL/notification-service-310/models"
 	"github.com/segmentio/kafka-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -433,7 +433,7 @@ func publishAlert(alertMessage string, alertType string, eventSource string, eve
 	parsedData["alertType"] = alertType
 	parsedData["source"] = eventSource
 	parsedData["value"] = eventValue
-	parsedData["deviceTypeAlert"] = "traqloc310p"
+	parsedData["deviceTypeAlert"] = "traqloc310"
 
 	// Convert the merged map to a JSON object
 	alertJSON, err := json.Marshal(parsedData)
